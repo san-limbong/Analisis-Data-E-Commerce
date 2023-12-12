@@ -36,7 +36,7 @@ def create_rfm_df(df):
     return rfm_df
 
 # Load cleaned data
-all_df = pd.read_csv("dashboard/all_data.csv")
+all_df = pd.read_csv("all_data.csv")
 
 datetime_columns = ["order_purchase_timestamp"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
@@ -51,7 +51,7 @@ max_date = all_df["order_purchase_timestamp"].max()
 
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("dashboard/logo.png")
+    st.image("logo.png")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
