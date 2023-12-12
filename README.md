@@ -1,4 +1,4 @@
-# Dicoding Collection Dashboard ✨
+# Analisis-Data-E-Commerce  ✨
 
 ## Setup environment
 ```
@@ -12,4 +12,4 @@ pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 streamlit run dashboard.py
 ```
 
-"# Analisis-Data-E-Commerce" 
+
