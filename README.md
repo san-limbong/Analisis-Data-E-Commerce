@@ -11,6 +11,7 @@
 5. Berapa banyak uang yang dihabiskan pelanggan dalam beberapa bulan terakhir?
 
 ## Dashboard
+![Screenshot (3)](https://github.com/san-limbong/Analisis-Data-E-Commerce/assets/81342084/4f8e0df7-671b-4398-86f9-47e9663fb537)
 Akses dashboard melalui tautan berikut [ini](https://e-commerce-data-analysis-by-san.streamlit.app/).
 
 
