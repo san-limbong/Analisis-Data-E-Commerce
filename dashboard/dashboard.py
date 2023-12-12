@@ -51,7 +51,7 @@ max_date = all_df["order_purchase_timestamp"].max()
 
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
+    st.image("dashboard/logo.png")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
@@ -71,7 +71,32 @@ bycity_df = create_bycity_df(main_df)
 rfm_df = create_rfm_df(main_df)
 
 # Product performance
-st.header('Dicoding Collection Dashboard :sparkles:')
+st.header('Analisis Dataset E-Commerce')
+
+with st.expander("Tentang"):
+    # Tab
+    tab1, tab2 = st.tabs(["Dataset", "Pertanyaan Analisis"])
+
+    with tab1:
+        st.write(
+        """ [Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) yang digunakan merupakan data komersial nyata, yang disediakan oleh Olist, department store terbesar di pasar Brasil. Atribut pencatatan pada dataset meliputi dari status pesanan, harga, pembayaran dan kinerja pengiriman hingga lokasi pelanggan, atribut produk, dan ulasan yang ditulis oleh pelanggan.
+        """
+    )
+    
+    with tab2:
+        st.write(
+        """ 
+        1. Kategori produk apa yang paling banyak dan paling sedikit terjual? 
+        2. Bagaimana persebaran pelanggan yang kita miliki?
+        3. Kapan terakhir pelanggan melakukan transaksi?
+        4. Seberapa sering seorang pelanggan melakukan pembelian dalam beberapa bulan terakhir?
+        5. Berapa banyak uang yang dihabiskan pelanggan dalam beberapa bulan terakhir? 
+        """
+    )
+    # End Tab
+
+# End Tab
+
 st.subheader("Best & Worst Performing Product")
 
 fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(35, 15))
@@ -159,4 +184,30 @@ ax[2].tick_params(axis='x', labelsize=35)
 
 st.pyplot(fig)
 
-st.caption('Copyright © Dicoding 2023')
+with st.expander("Kesimpulan"):
+    # Tab
+    tab1, tab2, tab3 = st.tabs(["Pertanyaan 1", "Pertanyaan 2", "Pertanyaan 3, 4 dan 5"])
+    
+    with tab1:
+        st.write(
+        """ 
+        Kategori produk yang paling banyak terjual adalah `bed_bath_table` sebanyak `9271 pemesanan` diikuti kategori `health_beauty` sebanyak `8649 pemesanan`. Sementara untuk kategori produk yang paling sedikit terjual adalah `security and services` yakni sebanyak `2 pemesanan`.
+        """
+    )
+    
+    with tab2:
+        st.write(
+        """ 
+        Berdasarkan analisis yang dilakukan diketahui bahwa persebaran pelanggan ditemukan pada kota `sao paulo` dan `rio de janeiro` yang ditampilkan dengan jumlah pemesanan yang terdapat pada dataset.
+        """
+    )
+    
+    with tab3:
+        st.write(
+        """ 
+        Berdasarkan visualisasi tersebut, pelanggan terakhir melakukan transaksi yakni `0 hari`. Adapun estimasi dari seberapa sering seorang pelanggan melakukan pembelian dalam beberapa bulan terakhir adalah sebanyak `1 kali`. Uang yang dihabiskan pelanggan dalam beberapa bulan terakhir adalah sebesar `137.144667 (satuan mata uang yang digunakan)`.
+        """
+    )
+    # End Tab
+
+st.caption('Copyright © San Antonio Limbong')
