@@ -1,4 +1,4 @@
-# Analisis-Data-E-Commerce  ✨
+# Analisis-Data-E-Commerce Olist✨
 
 ## Tentang
 [Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) yang digunakan merupakan data komersial nyata, yang disediakan oleh Olist, department store terbesar di pasar Brasil. Atribut pencatatan pada dataset meliputi dari status pesanan, harga, pembayaran dan kinerja pengiriman hingga lokasi pelanggan, atribut produk, dan ulasan yang ditulis oleh pelanggan.
