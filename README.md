@@ -10,7 +10,7 @@
 4. Seberapa sering seorang pelanggan melakukan pembelian dalam beberapa bulan terakhir?
 5. Berapa banyak uang yang dihabiskan pelanggan dalam beberapa bulan terakhir?
 
-## Pmebahasan proyek menerapkan teknik analisis lanjutan RFM analysis.
+## Pembahasan proyek menerapkan teknik analisis lanjutan RFM analysis.
 ### RFM Analysis, bertujuan mengelompokkan pelanggan berdasarkan perilaku pembelian mereka dengan memperhatikan tiga faktor utama:
   - Recency: Menghitung jumlah hari sejak terakhir kali pelanggan melakukan pembelian.
   - Frequency: Menghitung jumlah total transaksi yang dilakukan oleh pelanggan dalam periode tertentu.
